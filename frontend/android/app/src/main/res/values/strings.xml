@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MediBrief</string>
+    <string name="title_activity_main">MediBrief</string>
+    <string name="package_name">com.medibrief.health</string>
+    <string name="custom_url_scheme">com.medibrief.health</string>
+</resources>

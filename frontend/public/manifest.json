@@ -1,0 +1,37 @@
+{
+  "short_name": "MediBrief",
+  "name": "MediBrief - Medical Records Vault",
+  "description": "Secure AI-Powered Medical Records Management and Sharing Web Application",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/app-icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "32x32",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#02335c",
+  "theme_color": "#0f766e",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "categories": ["medical", "health", "productivity"]
+}

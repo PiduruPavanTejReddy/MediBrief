@@ -1,0 +1,41 @@
+METROPOLIS HEALTHCARE CLINICAL REFERENCE LABORATORIES
+DEPARTMENT OF PATHOLOGY & BIOCHEMISTRY
+COMPREHENSIVE METABOLIC & HEMATOLOGY PANEL
+
+PATIENT NAME: Venkatraman Iyer
+AGE: 58 YEARS
+GENDER: Male
+SAMPLE COLLECTED: 2026-02-14
+REPORT DATED: 2026-02-14
+REFERRING PHYSICIAN: Dr. K. R. Balakrishnan
+ACCESSION NO: MHL-2026-89104
+
+HEMATOLOGY INVESTIGATIONS:
+Hemoglobin: 12.8 g/dL (Reference: 13.5 - 17.5 g/dL) [LOW]
+Total Leucocyte Count (WBC): 11,800 /cumm (Reference: 4,000 - 11,000 /cumm) [HIGH]
+Neutrophils: 78 % (Reference: 40 - 70 %) [HIGH]
+Lymphocytes: 16 % (Reference: 20 - 40 %) [LOW]
+Platelet Count: 285,000 /cumm (Reference: 150,000 - 450,000 /cumm)
+Packed Cell Volume (PCV): 38.2 % (Reference: 40 - 52 %) [LOW]
+
+BIOCHEMISTRY & CARDIAC BIOMARKERS:
+Troponin-I: 4.80 ng/mL (Reference: 0.00 - 0.04 ng/mL) [CRITICAL HIGH]
+CK-MB: 48 U/L (Reference: 0 - 25 U/L) [HIGH]
+Fasting Blood Sugar: 168 mg/dL (Reference: 70 - 100 mg/dL) [HIGH]
+HbA1c: 7.9 % (Reference: 4.0 - 5.6 %) [HIGH]
+Blood Urea: 42 mg/dL (Reference: 15 - 45 mg/dL)
+Serum Creatinine: 1.4 mg/dL (Reference: 0.7 - 1.2 mg/dL) [HIGH]
+Estimated GFR: 54 mL/min/1.73m2 (Reference: > 90) [Stage 3a CKD / Impaired]
+
+LIPID PROFILE:
+Total Cholesterol: 242 mg/dL (Reference: 125 - 200 mg/dL) [HIGH]
+Triglycerides: 220 mg/dL (Reference: < 150 mg/dL) [HIGH]
+HDL Cholesterol: 34 mg/dL (Reference: 40 - 60 mg/dL) [LOW]
+LDL Cholesterol: 164 mg/dL (Reference: < 100 mg/dL) [HIGH]
+VLDL Cholesterol: 44 mg/dL (Reference: 5 - 30 mg/dL) [HIGH]
+
+IMPRESSION:
+1. Marked elevation in cardiac Troponin-I and CK-MB consistent with acute myocardial necrosis.
+2. Moderate dyslipidemia with elevated atherogenic LDL and low protective HDL.
+3. Suboptimal glycemic control with elevated HbA1c (7.9%).
+4. Mild elevation in serum creatinine with reduced eGFR indicating early diabetic nephropathy.

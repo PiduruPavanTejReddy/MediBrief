@@ -1,0 +1,44 @@
+APOLLO HOSPITALS ENTERPRISE - HEART INSTITUTE
+DEPARTMENT OF CARDIOLOGY & CARDIOVASCULAR SURGERY
+DISCHARGE SUMMARY
+
+PATIENT NAME: Venkatraman Iyer
+AGE: 58 YEARS
+GENDER: Male
+DATE OF ADMISSION: 2026-02-14
+DATE OF DISCHARGE: 2026-02-19
+ATTENDING PHYSICIAN: Dr. K. R. Balakrishnan, MS, MCh (Cardiothoracic Surgery)
+CONSULTING CARDIOLOGIST: Dr. Sengottuvelu, MD, DM, FACC
+
+PRIMARY DIAGNOSIS:
+1. Acute Coronary Syndrome - Non-ST Elevation Myocardial Infarction (NSTEMI)
+2. Triple Vessel Coronary Artery Disease (CAD)
+3. Type 2 Diabetes Mellitus with Nephropathy (Stage 2)
+4. Longstanding Essential Systemic Hypertension
+
+PROCEDURE PERFORMED:
+Coronary Angiography via Right Radial Artery approach (15-02-2026)
+Percutaneous Coronary Intervention (PCI) with drug-eluting stent (DES) to proximal-mid LAD artery (16-02-2026)
+
+HOSPITAL COURSE:
+Patient presented to Emergency with acute retrosternal crushing chest pain radiating to left shoulder and diaphoresis of 3 hours duration.
+Initial Troponin-I was markedly elevated at 4.8 ng/mL (Reference: < 0.04 ng/mL).
+ECG revealed ST depression in leads V4-V6 with T-wave inversion in lead I and aVL.
+2D Echocardiography showed regional wall motion abnormality in LAD territory with Left Ventricular Ejection Fraction (LVEF) of 45%.
+Diagnostic coronary angiography demonstrated 90% thrombotic occlusion of proximal LAD.
+Successful revascularization performed with placement of 3.0 x 28 mm Everolimus-eluting stent. TIMI-3 distal flow achieved without complications.
+Hemodynamically stabilized in Cardiac Intensive Care Unit (CICU), ambulated on Day 3, asymptomatic at discharge.
+
+DISCHARGE MEDICATIONS:
+1. Tab. Ticagrelor 90 mg - 1 tablet twice daily with meals for 12 months
+2. Tab. Ecosprin 75 mg - 1 tablet once daily after lunch indefinitely
+3. Tab. Rosuvastatin 40 mg - 1 tablet once daily at bedtime
+4. Tab. Metoprolol Succinate 50 mg - 1 tablet once daily in morning
+5. Tab. Ramipril 2.5 mg - 1 tablet once daily in morning
+6. Tab. Metformin 500 mg - 1 tablet twice daily after meals
+
+DISCHARGE ADVICE & FOLLOW-UP:
+- Cardiac rehabilitation program referral; low sodium, low saturated fat diabetic diet.
+- Monitor blood pressure (target < 130/80 mmHg) and daily weight.
+- Repeat lipid profile, serum electrolytes, and creatinine in 4 weeks.
+- Review with Dr. Sengottuvelu in Cardiology OPD on 2026-03-05.

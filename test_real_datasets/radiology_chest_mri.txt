@@ -1,0 +1,36 @@
+MAX HEALTHCARE INSTITUTE - DEPARTMENT OF RADIODIAGNOSIS
+CARDIAC MAGNETIC RESONANCE IMAGING (CMR) REPORT
+
+PATIENT NAME: Venkatraman Iyer
+AGE: 58 YEARS
+GENDER: Male
+EXAMINATION DATE: 2026-02-18
+REFERRING CARDIOLOGIST: Dr. Sengottuvelu
+MODALITY: 3.0T Cardiac MRI with Gadolinium Delayed Enhancement (LGE)
+
+CLINICAL INDICATION:
+Post-NSTEMI Day 4 evaluation for myocardial viability, microvascular obstruction, and regional wall motion assessment following PCI to LAD.
+
+TECHNICAL PARAMETERS:
+Multi-planar cine SSFP imaging, T2-weighted STIR edema sequences, and Phase-Sensitive Inversion Recovery (PSIR) late gadolinium enhancement.
+
+FINDINGS:
+1. Left Ventricular Function:
+   - End-Diastolic Volume (LVEDV): 146 mL (Normal: 100 - 160 mL)
+   - End-Systolic Volume (LVESV): 80 mL (Normal: 30 - 70 mL)
+   - Left Ventricular Ejection Fraction (LVEF): 45 % (Mild systolic dysfunction)
+   - Regional wall motion: Severe hypokinesia of the mid-to-apical anterior wall, anteroseptum, and apex.
+
+2. Tissue Characterization & Edema (T2-STIR):
+   - High signal intensity in the anterior wall and septum reflecting acute myocardial edema / ischemic area at risk.
+
+3. Myocardial Viability & Late Gadolinium Enhancement (LGE):
+   - Subendocardial to mid-myocardial hyperenhancement involving 35% to 50% transmurality in the LAD territory.
+   - Viable myocardium preserved (> 50% wall thickness viable throughout).
+   - No no-reflow phenomenon or microvascular obstruction.
+   - No intracardiac thrombus visualized in the left ventricular apex.
+
+IMPRESSION:
+1. Subendocardial infarction in the LAD vascular territory with preserved myocardial viability (< 50% transmural necrosis).
+2. Mild left ventricular global systolic impairment with LVEF 45%.
+3. Absence of apical thrombus or microvascular obstruction. Favorable prognosis for functional recovery with guideline-directed medical therapy (GDMT).
