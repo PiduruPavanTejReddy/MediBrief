@@ -567,6 +567,125 @@ IMPRESSION: Stable diabetes.`;
     assert.ok(res.citations.length >= 2);
   });
 
+  console.log('\n--- Phase 7: Complete 28 Questions & Conversational Follow-Up Suite ---');
+
+  await test('Q16: "Show me my medical records."', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const res = await AIService.chat(user.id, 'Show me my medical records.', 'patient');
+    assert.ok(res.answer.includes('verified medical record'));
+    assert.ok(res.citations.length >= 10);
+  });
+
+  await test('Q17: "What was my left eye power?"', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const res = await AIService.chat(user.id, 'What was my left eye power?', 'patient');
+    assert.ok(res.answer.includes('-1.00 DS') || res.answer.includes('Left Eye (OS'));
+    assert.ok(res.citations.length >= 1);
+  });
+
+  await test('Q18: "When was my last medical checkup?"', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const res = await AIService.chat(user.id, 'When was my last medical checkup?', 'patient');
+    assert.ok(res.answer.includes('19 September 2026'));
+    assert.ok(res.citations.length >= 1);
+  });
+
+  await test('Q19: "What diagnoses are recorded?"', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const res = await AIService.chat(user.id, 'What diagnoses are recorded?', 'patient');
+    assert.ok(res.answer.includes('documented clinical diagnoses'));
+    assert.ok(res.citations.length >= 1);
+  });
+
+  await test('Q20: "What changed between my latest two reports?"', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const res = await AIService.chat(user.id, 'What changed between my latest two reports?', 'patient');
+    assert.ok(res.answer.includes('recent medical reports'));
+    assert.ok(res.citations.length >= 2);
+  });
+
+  await test('Q21: "Tell me everything in my eye report."', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const res = await AIService.chat(user.id, 'Tell me everything in my eye report.', 'patient');
+    assert.ok(res.answer.includes('Right Eye (OD'));
+    assert.ok(res.answer.includes('Left Eye (OS'));
+    assert.ok(res.citations.length >= 1);
+  });
+
+  await test('Q22: "What reports do I have from June?"', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const res = await AIService.chat(user.id, 'What reports do I have from June?', 'patient');
+    assert.ok(res.answer.includes('JUNE'));
+    assert.ok(res.citations.length >= 1);
+  });
+
+  await test('Q23: "What happened in my most recent medical visit?"', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const res = await AIService.chat(user.id, 'What happened in my most recent medical visit?', 'patient');
+    assert.ok(res.answer.includes('19 September 2026'));
+    assert.ok(res.citations.length >= 1);
+  });
+
+  await test('Q24: "What information do you have about me?"', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const res = await AIService.chat(user.id, 'What information do you have about me?', 'patient');
+    assert.ok(res.answer.includes('Rahul Sharma'));
+    assert.ok(res.answer.includes('Blood Group') && res.answer.includes('O+'));
+    assert.ok(res.answer.includes('Emergency Contact:'));
+  });
+
+  await test('Q25: "What information is missing from my medical records?"', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const res = await AIService.chat(user.id, 'What information is missing from my medical records?', 'patient');
+    assert.ok(res.answer.includes('Missing Clinical Categories') || res.answer.includes('missing or recommended'));
+  });
+
+  await test('Q26: "Explain my latest report in simple terms."', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const res = await AIService.chat(user.id, 'Explain my latest report in simple terms.', 'patient');
+    assert.ok(res.answer.includes('plain-English') || res.answer.includes('breakdown'));
+    assert.ok(res.citations.length >= 1);
+  });
+
+  await test('Q27: "What should I ask my doctor about this report?"', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const res = await AIService.chat(user.id, 'What should I ask my doctor about this report?', 'patient');
+    assert.ok(res.answer.includes('high-yield questions'));
+    assert.ok(res.citations.length >= 1);
+  });
+
+  await test('Q28: Follow-up: "And what about the other eye?"', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const history = [
+      { role: 'user' as const, message: 'What was my right eye power?' },
+      { role: 'assistant' as const, message: 'In your Eye Prescription, your Right Eye (OD) prescription is: SPH -1.25 DS, CYL -0.50 DC, Axis 180.' }
+    ];
+    const res = await AIService.chat(user.id, 'And what about the other eye?', 'patient', undefined, history);
+    assert.ok(res.answer.includes('Left Eye (OS'));
+    assert.ok(res.citations.length >= 1);
+  });
+
+  await test('Q29: Follow-up: "Can you summarize that?"', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const history = [
+      { role: 'user' as const, message: 'Tell me about my latest report.' },
+      { role: 'assistant' as const, message: 'Here are the details from your Eye Prescription from 19 September 2026.' }
+    ];
+    const res = await AIService.chat(user.id, 'Can you summarize that?', 'patient', undefined, history);
+    assert.ok(res.answer.includes('concise summary'));
+    assert.ok(res.citations.length >= 1);
+  });
+
+  await test('Q30: Follow-up: "Can you explain that result?"', async () => {
+    const user = db.prepare('SELECT id FROM users WHERE mobile_number = ?').get('+919876543210') as any;
+    const history = [
+      { role: 'user' as const, message: 'What was my haemoglobin?' },
+      { role: 'assistant' as const, message: 'Your latest Haemoglobin was 14.2 g/dL on 20 July 2026.' }
+    ];
+    const res = await AIService.chat(user.id, 'Can you explain that result?', 'patient', undefined, history);
+    assert.ok(res.answer.includes('Haemoglobin') || res.answer.includes('protein'));
+  });
+
   console.log('\n====================================================');
   console.log(` Test Suite Completed: ${passed} Passed, ${failed} Failed`);
   console.log('====================================================\n');

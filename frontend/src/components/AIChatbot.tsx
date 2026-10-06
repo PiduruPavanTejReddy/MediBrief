@@ -62,10 +62,12 @@ export const AIChatbot: React.FC<AIChatbotProps> = ({
   const mobileInputRef = useRef<HTMLInputElement | null>(null);
 
   const defaultPrompts = actorType === 'patient' ? [
-    'What changed in my recent reports?',
+    "What's my latest report?",
+    'Summarize my history',
     'What medications am I taking?',
-    'Show my blood test trends',
-    'Summarize my medical history'
+    'What was my eye prescription?',
+    'What was my latest blood test?',
+    'What should I ask my doctor?'
   ] : [
     'What medications is this patient taking?',
     'What are the active diagnoses?',
@@ -107,10 +109,13 @@ export const AIChatbot: React.FC<AIChatbotProps> = ({
     setIsLoading(true);
     setLastFailedQuery(null);
 
-    const historyPayload = messages.slice(-4).map(m => ({
-      role: m.role,
-      message: m.message
-    }));
+    const historyPayload = messages
+      .filter(m => m.id !== 'welcome')
+      .slice(-12)
+      .map(m => ({
+        role: m.role,
+        message: m.message
+      }));
 
     try {
       const response = actorType === 'patient'
