@@ -1,0 +1,20 @@
+{
+  "name": "medibrief-workspace",
+  "version": "1.0.0",
+  "description": "MediBrief - AI-Powered Medical Records Management and Sharing Web Application",
+  "scripts": {
+    "dev": "concurrently -n \"backend,frontend\" -c \"blue,teal\" \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "test": "npm run test --prefix backend",
+    "seed": "npm run seed --prefix backend",
+    "db:reset": "npm run db:reset --prefix backend",
+    "android:sync": "npm run android:sync --prefix frontend",
+    "android:open": "npm run android:open --prefix frontend",
+    "android:build": "npm run android:build --prefix frontend",
+    "build": "npm run build --prefix backend && npm run build --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
